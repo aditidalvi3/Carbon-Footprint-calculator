@@ -1,4 +1,3 @@
-/* styles.css */
 h2{
     color: #523029;
     text-align: center;
@@ -164,4 +163,61 @@ body {
     nav li {
         margin: 10px 0; /* Adjust spacing */
     }
+}
+
+#articles-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.article {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    background: #fff;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.article:hover {
+    transform: scale(1.05);
+}
+
+.article img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 2px solid #ddd;
+}
+
+.article h3 {
+    margin: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.article p {
+    font-size: 14px;
+    color: #666;
+    padding: 0 10px;
+}
+
+.article a {
+    display: block;
+    margin: 10px auto;
+    width: fit-content;
+    padding: 8px 12px;
+    background: #2d6a4f;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.article a:hover {
+    background: #1b4332;
 }
